@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"fmt"
 	"net/http"
 	"os"
 	"time"
@@ -41,7 +40,7 @@ func Register(c *gin.Context){
 		})
 		return
 	}
-	fmt.Println(user)
+	
 	c.JSON(http.StatusOK, gin.H{
 		"message": "Berhasil Registrasi Akun",
 	})

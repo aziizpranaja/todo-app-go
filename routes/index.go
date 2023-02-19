@@ -7,6 +7,7 @@ func AllRoute() {
 	route.Use(gin.Logger())
 
 	AuthRoute(route)
+	TodoRoute(route)
 
 	route.Run()
 }
